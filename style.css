@@ -40,6 +40,7 @@ nav ul {
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
+  margin-top: 20%;
 }
 
 
@@ -63,4 +64,37 @@ nav {
 
 main {
   margin-top: 2%;
+}
+
+
+#home p:first-child {
+  font-size: 2rem;
+  padding-top: 10%;
+}
+
+
+#home p:nth-child(2) {
+  font-size: 3rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+#home p:nth-child(3) {
+  font-size: 1.5rem;
+}
+
+
+#home p:nth-child(-n+3) {
+  color: rebeccapurple;
+}
+
+
+#home p:last-child {
+  margin-top: 5%;
+  color: rgb(157, 157, 157);
+}
+
+
+#home p {
+  letter-spacing: 0.2rem;
 }
