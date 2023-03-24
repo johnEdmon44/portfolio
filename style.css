@@ -5,6 +5,11 @@
 }
 
 
+html{
+  scroll-behavior: smooth;
+}
+
+
 body {
   background-color: rgb(1, 5, 8);
   font-family: "Roboto", sans-serif;
@@ -21,14 +26,16 @@ nav li {
 }
 
 
-nav ul li p {
+nav ul li a {
   text-shadow: none;
   opacity: 0.6;
   transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  color: white;
 }
 
 
-nav ul li:hover p {
+nav ul li:hover a {
   font-size: 1.2rem;
   letter-spacing: 1.5rem;
   opacity: 1;
@@ -41,12 +48,11 @@ nav ul {
   flex-direction: column;
   gap: 2.5rem;
   margin-top: 20%;
+  margin-left: 5%;
 }
 
 
 nav {
-  color: white;
-  margin-left: 2%;
   position: fixed;
   width: 20vw;
   height: 80vh;
@@ -58,7 +64,7 @@ nav {
 
 .section-container {
   color: white;
-  margin-left: 25%;
+  margin-left: 20vw;
 }
 
 
@@ -68,19 +74,21 @@ main {
 
 
 #home p:first-child {
-  font-size: 2rem;
-  padding-top: 10%;
+  font-size: 2.5rem;
+  padding-top: 8%;
 }
 
 
 #home p:nth-child(2) {
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-family: 'Montserrat', sans-serif;
 }
 
 
 #home p:nth-child(3) {
-  font-size: 1.5rem;
+  font-size: 2rem;
+  margin-top: 2%;
+  letter-spacing: .5rem;
 }
 
 
@@ -89,12 +97,88 @@ main {
 }
 
 
-#home p:last-child {
+#home p:nth-child(4) {
   margin-top: 5%;
   color: rgb(157, 157, 157);
+  margin-top: 10%;
 }
 
 
 #home p {
   letter-spacing: 0.2rem;
+  text-align: center;
+}
+
+
+#home {
+  height: 90vh;
+}
+
+
+#about {
+  height: 90vh;
+}
+
+
+#home div{
+  display: flex;
+  justify-content: center;
+}
+
+
+#scroll-down-link {
+  margin-top: 15%;
+  color: rgb(203, 203, 203);
+  letter-spacing: .5rem;
+  text-decoration: none;
+  padding: 10px;
+  position: relative;
+}
+
+
+#scroll-down-link:hover {
+  color: rgb(255, 255, 255);
+}
+
+
+#about h1 {
+  text-align: center;
+  margin-top: 10%;
+  letter-spacing: 1rem;
+}
+
+
+.fa-solid.fa-arrow-down {
+  animation: arrow-down-loop 1s infinite;
+}
+
+
+@keyframes arrow-down-loop {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+
+#scroll-down-link:hover .fa-solid.fa-arrow-down {
+  animation: arrow-down-hover 1s infinite;
+}
+
+
+@keyframes arrow-down-hover {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
