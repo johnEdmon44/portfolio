@@ -182,3 +182,36 @@ main {
     transform: translateY(0px);
   }
 }
+
+
+#about {
+  color: rgb(203, 203, 203);
+  letter-spacing: 2px;
+}
+
+
+.skill {
+  display: flex;
+  justify-content: center;
+}
+
+
+.skills {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2%;
+}
+
+
+.skills div {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+
+.skills-logo {
+  height: 60px;
+  width: 60px;
+  object-fit: contain;
+}
