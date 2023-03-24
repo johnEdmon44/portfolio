@@ -187,6 +187,7 @@ main {
 #about {
   color: rgb(203, 203, 203);
   letter-spacing: 2px;
+  height: 90vh;
 }
 
 
@@ -199,7 +200,7 @@ main {
 .skills {
   display: flex;
   gap: 2rem;
-  margin-top: 2%;
+  margin-top: 3%;
 }
 
 
