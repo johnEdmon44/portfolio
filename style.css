@@ -121,7 +121,7 @@ main {
 }
 
 
-#scroll-down-link {
+.scroll-down-link {
   margin-top: 15%;
   color: rgb(203, 203, 203);
   letter-spacing: .5rem;
@@ -131,7 +131,7 @@ main {
 }
 
 
-#scroll-down-link:hover {
+.scroll-down-link:hover {
   color: rgb(255, 255, 255);
 }
 
@@ -161,7 +161,7 @@ main {
 }
 
 
-#scroll-down-link:hover .fa-solid.fa-arrow-down {
+.scroll-down-link:hover .fa-solid.fa-arrow-down {
   animation: arrow-down-hover 1s infinite;
 }
 
