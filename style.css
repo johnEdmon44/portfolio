@@ -115,11 +115,6 @@ main {
 }
 
 
-#about {
-  height: 90vh;
-}
-
-
 #home div{
   display: flex;
   justify-content: center;
@@ -143,7 +138,7 @@ main {
 
 #about h1 {
   text-align: center;
-  margin-top: 10%;
+  padding-top: 7%;
   letter-spacing: 1rem;
 }
 
@@ -215,4 +210,117 @@ main {
   height: 60px;
   width: 60px;
   object-fit: contain;
+}
+
+
+
+#projects {
+  height: 90vh;
+}
+
+
+#projects h1 {
+  text-align: center;
+  margin-top: 10%;
+  letter-spacing: 1rem;
+}
+
+
+.project-img {
+  height: 250px;
+  width: 500px;
+  border: 1px solid red;
+}
+
+
+.project {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10%;
+}
+
+
+.project div:nth-child(2) {
+  width: 95%;
+}
+
+
+.project div:nth-child(2) > * {
+  padding-left: 5%;
+}
+
+
+.project h3 {
+  letter-spacing: .5rem;
+  margin-bottom: 5%;
+}
+
+
+.project p {
+  letter-spacing: .1rem;
+}
+
+
+.project-container {
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+
+.tech-logo {
+  height: 40px;
+  width: 40px;
+  object-fit: contain;
+}
+
+
+.tech {
+  margin-top: 3%;
+  display: flex;
+}
+
+
+.tech div:first-child {
+  display: flex;
+  gap: 1rem;
+}
+
+
+.tech div:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+
+.project-link {
+  text-decoration: none;
+  background-color: rgb(74, 203, 81);
+  color: black;
+  padding: 10px;
+  letter-spacing: 1rem;
+  border-radius: 5px;
+}
+
+
+.project-link:hover {
+  opacity: 0.7;
+  border: 1px solid white;
+  transition: all 0.3s;
+}
+
+
+#more-projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20%;
+}
+
+
+#more-projects h1 {
+  margin-bottom: 2%;
 }
