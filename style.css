@@ -61,6 +61,21 @@ nav {
   margin-bottom: 20%;
 }
 
+.contacts {
+  color: white;
+  opacity: 0.6;
+  margin-left: 7%;
+  margin-top: 20%;
+}
+
+.contacts p {
+  margin-top: 5%;
+}
+
+.contacts i {
+  padding-right: 10px;
+}
+
 
 .section-container {
   color: white;
