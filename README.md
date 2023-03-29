@@ -3,4 +3,3 @@
 
 todo
 -light mode
--mobile responsive
