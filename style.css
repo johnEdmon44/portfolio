@@ -571,3 +571,10 @@ main {
     font-size: 0.5rem;
   }
 }
+
+
+@media (max-width: 701px) {
+  #about h1 {
+    padding-top: 15%;
+  }
+}
