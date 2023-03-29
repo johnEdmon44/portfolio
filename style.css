@@ -468,3 +468,106 @@ main {
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(83, 44, 121);
 }
+
+
+@media (max-width: 700px) {
+  main {
+    display: flex;
+    justify-content: center ;
+    align-items: center ;
+    flex-direction: column ;
+  }
+
+  #home p:nth-child(-n+3) {
+    font-size: 1rem;
+  }
+
+  #home {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #home p:nth-child(2) {
+    font-size: 1rem;
+  }
+
+  #home p:nth-child(3) {
+    font-size: .8rem;
+    letter-spacing: .2rem;
+  }
+
+  #home p:nth-child(4) {
+    font-size: 0.6rem;
+    width: 80vw;
+    padding-top: 20%;
+  }
+
+  .scroll-down-link {
+    margin-top: 40%;
+    font-size: 0.6rem;
+  }
+
+
+  #about h1 {
+    font-size: 0.7rem;
+    letter-spacing: 0.7rem;
+    margin-top: 10%;
+  }
+
+  .skills-logo {
+    height: 30px;
+    width: 30px;
+  }
+
+  .skills {
+    gap: 10px;
+    margin-top: 10%;
+  }
+
+  .skills p {
+    font-size: 0.6rem;
+  }
+
+  .project-img {
+    height: 200px;
+    width: 300px;
+  }
+
+  #projects h1 {
+    font-size: 0.7rem;
+    letter-spacing: 0.7rem;
+    margin-top: 10%;
+  }
+
+  .project h3 {
+    font-size: 0.7rem;
+  }
+
+  .project-details p {
+    font-size: 0.7rem;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .tech {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .tech-logo {
+    height: 30px;
+    width: 30px;
+  }
+
+  .project-link {
+    padding: 5px;
+    letter-spacing: 0.6rem;
+    margin-top: 5%;
+    font-size: 0.5rem;
+  }
+}
