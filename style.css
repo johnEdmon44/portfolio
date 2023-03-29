@@ -237,11 +237,12 @@ main {
   display: flex;
   justify-content: space-between;
   margin-top: 10%;
+  flex-direction: column;
 }
 
 
 .project div:nth-child(2) {
-  width: 95%;
+  width: 100%;
 }
 
 
@@ -252,7 +253,7 @@ main {
 
 .project h3 {
   letter-spacing: .5rem;
-  margin-bottom: 5%;
+  margin-bottom: 2%;
 }
 
 
@@ -282,8 +283,12 @@ main {
 
 
 .tech div:first-child {
-  display: flex;
-  gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: 10%;
+  gap: 10px;
 }
 
 
@@ -291,7 +296,14 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 10px;
+  max-width: 50%;
+  width: 50%;
+}
+
+
+.project-details {
+  display: flex;
 }
 
 
@@ -299,7 +311,7 @@ main {
   text-decoration: none;
   background-color: rgb(74, 203, 81);
   color: black;
-  padding: 10px;
+  padding: .3rem;
   letter-spacing: 1rem;
   border-radius: 5px;
 }
@@ -330,4 +342,64 @@ main {
 .scroll-down-container {
   display: flex;
   justify-content: center;
+}
+
+
+
+@media (max-width: 1030px) {
+  nav {
+    position: absolute;
+    left: -500px;
+  }
+
+  .section-container {
+    margin:  0;
+  }
+}
+
+
+@media (max-width: 863px) {
+  .project {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+@media (max-width: 890px) {
+  .project-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .project h3 {
+    text-align: center;
+  }
+
+
+  .project {
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+  }
+
+
+  .project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 890px;
+  }
+
+  .project p {
+    margin-top: 5%;
+  }
+
+  .project div:nth-child(2) {
+    padding: 0;
+  }
 }
