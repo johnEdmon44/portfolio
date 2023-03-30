@@ -297,7 +297,7 @@ main {
 }
 
 
-.tech div:first-child {
+.tech-logos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-content: flex-start;
@@ -307,7 +307,7 @@ main {
 }
 
 
-.tech div:nth-child(2) {
+.links-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -329,6 +329,7 @@ main {
   padding: .3rem;
   letter-spacing: 1rem;
   border-radius: 5px;
+  margin: 0 auto;
 }
 
 
