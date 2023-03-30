@@ -448,7 +448,7 @@ main {
   }
 }
 
-
+/* scroll-bar */
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -456,7 +456,7 @@ main {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #000000;
+  background: #00000000;
 }
 
 /* Handle */
@@ -597,4 +597,22 @@ body {
     display: flex;
     justify-content: center;
   }
+}
+
+
+.mode-switch {
+  margin-left: 5%;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+
+.mode-switch > *{
+  cursor: pointer;
+}
+
+
+.fa-sun {
+  opacity: 0.2;
 }

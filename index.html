@@ -9,12 +9,17 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/776211f7b1.js" crossorigin="anonymous"></script>
+  <script src="./index.js" defer></script>
   <title>John Edmon</title>
 </head>
 
 <body>
   <main>
-    <nav>
+    <nav id="nav">
+      <div class="mode-switch">
+        <i id="moon-icon" class="fas fa-moon fa-lg fa-fw fa-inverse"></i> <!-- dark mode icon -->
+        <i id="sun-icon" class="fas fa-sun fa-lg fa-fw fa-inverse"></i> <!-- light mode icon -->
+      </div>
       <ul>
         <li>
           <a href="#home">HOME</a>
