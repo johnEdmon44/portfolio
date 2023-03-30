@@ -585,8 +585,16 @@ body {
   overflow-x: hidden;
 }
 
+
 @media (max-width: 475px) {
   #about h1, #projects h1 {
     margin-top: 20%;
+  }
+}
+
+@media (max-width: 687px) {
+  .tech-logos {
+    display: flex;
+    justify-content: center;
   }
 }
