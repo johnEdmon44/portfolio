@@ -584,3 +584,9 @@ main {
 body {
   overflow-x: hidden;
 }
+
+@media (max-width: 475px) {
+  #about h1, #projects h1 {
+    margin-top: 20%;
+  }
+}
