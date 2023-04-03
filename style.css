@@ -616,3 +616,35 @@ body {
 .fa-sun {
   opacity: 0.2;
 }
+
+
+@media (max-width: 376px){
+  #home p:nth-child(4) {
+    margin-bottom: 50%;
+  }
+
+  .scroll-down-link {
+    margin-top: 100%;
+  }
+}
+
+
+@media (max-width: 426px){
+  #home p:nth-child(4) {
+    margin-bottom: 30%;
+  }
+
+  .scroll-down-link {
+    margin-top: 90%;
+  }
+}
+
+@media (max-width: 321px){
+  #home p:nth-child(4) {
+    margin-bottom: 45%;
+  }
+
+  .scroll-down-link {
+    margin-top: 90%;
+  }
+}
