@@ -270,7 +270,6 @@ main {
 .project-img {
   height: 17rem;
   width: 25rem;
-  border: 1px solid red;
   box-sizing: 0;
   padding: 0;
 }
