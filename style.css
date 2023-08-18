@@ -37,7 +37,7 @@ body {
 
 
 
-nav li {
+.nav--page li {
   list-style-type: none;
   cursor: pointer;
   letter-spacing: 1rem;
@@ -55,7 +55,7 @@ nav ul li a {
 }
 
 
-nav ul li:hover a {
+.nav--page li:hover a {
   font-size: 1.2rem;
   letter-spacing: 1.5rem;
   opacity: 1;
@@ -88,12 +88,20 @@ nav {
   margin-top: 20%;
 }
 
-.contacts p {
-  margin-top: 5%;
+
+.contacts a {
+  opacity: 1;
 }
 
-.contacts i {
-  padding-right: 10px;
+
+.contacts li {
+  list-style-type: none;
+  height: 5px;
+}
+
+
+.contacts i{
+  margin-right: 1rem;
 }
 
 
@@ -343,6 +351,14 @@ main {
 }
 
 
+.links-container a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.7rem;
+}
+
+
 .project-details {
   display: flex;
 }
@@ -574,6 +590,11 @@ main {
   .scroll-down-link {
     font-size: 0.6rem;
   }
+
+  .links-container a{
+    font-size: 1rem;
+    letter-spacing: 0.3rem;
+  }
 }
 
 
@@ -598,6 +619,10 @@ main {
 @media (max-width: 321px) {
   .scroll-down-link {
     letter-spacing: 0.3rem;
+  }
+
+  .skills {
+    gap: 1rem;
   }
 }
 
