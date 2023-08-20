@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <script src="https://kit.fontawesome.com/776211f7b1.js" crossorigin="anonymous"></script>
   <script src="./index.js" defer></script>
   <title>John Edmon</title>
@@ -41,7 +42,7 @@
       </ul>
     </nav>
 
-    <section id="home" class="section-container">
+    <section id="home" class="section-container" data-aos="zoom-in">
       <p>Hey there! I'm</p>
       <p>John Edmon Moncado</p>
       <p>FRONTEND DEVELOPER</p>
@@ -56,10 +57,10 @@
 
 
     <section id="about" class="section-container">
-      <h1>SKILLS</h1>
+      <h1 data-aos="zoom-in">SKILLS</h1>
 
       <div class="skill">
-        <div class="skills">
+        <div class="skills" data-aos="zoom-in">
           <div>
             <p>HTML</p>
             <img src="./images/html.png" alt="html" class="skills-logo">
@@ -82,10 +83,10 @@
         </div>
       </div>
 
-      <h1>FAMILIAR WITH</h1>
+      <h1 data-aos="zoom-in">FAMILIAR WITH</h1>
 
       <div class="skill">
-        <div class="skills">
+        <div class="skills" data-aos="zoom-in">
           <div>
             <p>GIT</p>
             <img src="./images/git.png" alt="git" class="skills-logo">
@@ -121,11 +122,11 @@
     </section>
 
     <section id="projects" class="section-container">
-      <h1>PROJECTS</h1>
+      <h1 data-aos="zoom-in">PROJECTS</h1>
 
       <div class="project-container">
         
-        <div class="project">
+        <div class="project" data-aos="zoom-in">
           <h3>CovidAPI</h3>
           <div class="project-details">
               <img src="./images/CovidAPI.png" class="project-img">
@@ -152,8 +153,8 @@
         </div>
 
 
-        <div class="project">
-          <h3>SHOPPING CART</h3>
+        <div class="project" data-aos="zoom-in">
+          <h3 >SHOPPING CART</h3>
           <div class="project-details">
             <img src="./images/ShoppingCart.png" class="project-img">
             <div>
@@ -179,7 +180,7 @@
         </div>
 
 
-        <div class="project">
+        <div class="project" data-aos="zoom-in">
           <h3>TYPING TEST</h3>
           <div class="project-details">
             <img src="./images/typingTest.png" class="project-img">
@@ -209,11 +210,18 @@
 
       </div>
 
-      <div id="more-projects">
+      <div id="more-projects" data-aos="zoom-in">
         <h1>MORE PROJECTS AT</h1>
         <a href="https://github.com/johnEdmon44?tab=repositories" class="project-link" target="_blank"><i class="fa-brands fa-github"></i>GITHUB</a>
       </div>
     </section>
   </main>
+
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
 </body>
 </html>
