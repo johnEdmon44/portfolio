@@ -427,6 +427,19 @@ main {
 }
 
 
+#menu {
+  font-size: 3rem;
+  position: fixed;
+  left: 0;
+  top: 0;
+  margin: 10px;
+  display: none;
+  background: none;
+  border: none;
+  z-index: 1000;
+}
+
+
 /* hide side menu on mobile/tablets */
 @media (max-width: 1030px) {
   nav {
@@ -483,6 +496,22 @@ main {
 
   #projects {
     margin: 0;
+  }
+
+  #menu {
+    display: block;
+  }
+
+  #nav.visible {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: black;
+    height: 100vh;
+    z-index: 999;
+    width: 100vw;
+    margin-top: 0;
+    padding-top: 50px;
   }
 }
 

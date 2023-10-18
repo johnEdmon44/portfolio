@@ -1,7 +1,7 @@
 "use strict";
 
-const moonIcon = document.getElementById("moon-icon");
-const sunIcon = document.getElementById("sun-icon");
+const moonIcon = document.querySelector("#moon-icon");
+const sunIcon = document.querySelector("#sun-icon");
 const body = document.body;
 const nav = document.querySelectorAll("#nav a");
 const contacts = document.querySelector(".contacts");
@@ -10,8 +10,11 @@ const homeP = document.querySelector("#home p:nth-child(4)");
 const about = document.querySelector("#about");
 const projects = document.querySelector("#projects");
 
+const menuBtn = document.querySelector("#menu");
+const slideMenu = document.querySelector('#nav');
 
-moonIcon.addEventListener('click', () => {
+
+moonIcon.addEventListener("click", () => {
   moonIcon.style.opacity = 1;
   sunIcon.style.opacity = 0.2;
 
@@ -35,7 +38,7 @@ moonIcon.addEventListener('click', () => {
 });
 
 
-sunIcon.addEventListener('click', () => {
+sunIcon.addEventListener("click", () => {
   moonIcon.style.opacity = 0.2;
   sunIcon.style.opacity = 1;
 
@@ -53,11 +56,11 @@ sunIcon.addEventListener('click', () => {
     scroll.style.color = "black";
     scroll.style.opacity = "0.7";
 
-    scroll.addEventListener('mouseover', () => {
+    scroll.addEventListener("mouseover", () => {
       scroll.style.opacity = "1"
     });
 
-    scroll.addEventListener('mouseout', () => {
+    scroll.addEventListener("mouseover", () => {
       scroll.style.opacity = "0.7";
     });
   });
@@ -65,4 +68,16 @@ sunIcon.addEventListener('click', () => {
   homeP.style.color = "black";
   about.style.color = "black";
   projects.style.color = "black";
+});
+
+
+menuBtn.addEventListener("click", () => {
+  slideMenu.classList.toggle("visible");
+});
+
+
+nav.forEach((link) => {
+  link.addEventListener("click", () => {
+    slideMenu.classList.toggle("visible");
+  });
 });
