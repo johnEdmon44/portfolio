@@ -667,6 +667,7 @@ main {
 
   #home p:first-child {
     font-size: 1.5rem;
+    margin-top: 5rem;
   }
 
   .project p {
