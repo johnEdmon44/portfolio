@@ -79,6 +79,7 @@ nav {
   border-right: 1px solid rgba(151, 151, 151, 0.6);
   margin-top: 2%;
   margin-bottom: 20%;
+  transition: all .2s ease-in;
 }
 
 .contacts {
@@ -433,20 +434,22 @@ main {
   left: 0;
   top: 0;
   margin: 10px;
-  display: none;
   background: none;
   border: none;
   z-index: 1000;
 }
 
 
-/* hide side menu on mobile/tablets */
-@media (max-width: 1030px) {
-  nav {
-    position: absolute;
-    left: -500px;
-  }
+#menu-container {
+  background-color: black;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 10vh;
+  z-index: 999;
+  display: none;
 }
+
 
 
 @media (width: 2560px) {
@@ -481,6 +484,10 @@ main {
 
 
 @media (max-width: 1024px) {
+  nav {
+    position: absolute;
+    left: -250px;
+  }
 
   .project p {
     letter-spacing: 0.03rem;
@@ -498,7 +505,8 @@ main {
     margin: 0;
   }
 
-  #menu {
+  #menu-container {
+    left: 0 !important;
     display: block;
   }
 
