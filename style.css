@@ -278,10 +278,53 @@ main {
 
 
 .project-img {
+  height: 100%;
+  width: 100%;
+  background-size: contain;
+}
+
+
+.img-container {
   height: 17rem;
-  width: 25rem;
-  box-sizing: 0;
-  padding: 0;
+  width: 60rem;
+  position: relative;
+}
+
+
+.img-container:hover .project-img {
+  opacity: 0.3;
+  transition: all .5s;
+}
+
+
+.img-container:hover .project-img-demo {
+  opacity: 1;
+  top: 50%;
+}
+
+
+.project-img-demo {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  border: 1px solid white;
+  padding: 5px 15px 5px 15px;
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  transition: all .5s;
+  cursor: pointer;
+}
+
+
+.project-img-demo:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
 }
 
 
@@ -469,9 +512,10 @@ main {
     margin-top: 5%;
   }
 
-  .project-img {
-    height: 22rem;
-    width: 30rem;
+  .img-container {
+    height: 23rem;
+    width: 60rem;
+    position: relative;
   }
 }
 
@@ -574,6 +618,11 @@ main {
   .project-details > div:not(.links-container):nth-child(2) {
     width: 30rem;
   }
+
+  .img-container {
+    height: 22rem;
+    width: 32rem;
+  }
 }
 
 @media (max-width: 426px) {
@@ -632,11 +681,16 @@ main {
     font-size: 1rem;
     letter-spacing: 0.3rem;
   }
+
+  .img-container {
+    height: 15rem;
+    width: 23rem;
+  }
 }
 
 
 @media (max-width: 376px) {
-  .project-img {
+  .img-container {
     width: 18rem;
     height: 12rem;
   }
