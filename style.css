@@ -630,6 +630,13 @@ main {
   }
 }
 
+@media( max-width: 510px ) {
+  .img-container {
+    height: 20rem;
+    width: 30rem;
+  }
+}
+
 @media (max-width: 426px) {
   #home {
     margin-top: 10%;
