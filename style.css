@@ -9,6 +9,41 @@ html{
   scroll-behavior: smooth;
 }
 
+body.light-mode {
+  background-color: rgba(249, 249, 249);
+}
+
+#moon-icon.light-mode {
+  color: rgb(157, 157, 157);
+}
+
+#sun-icon.light-mode{
+  color: rgb(0, 0, 0);
+  opacity: 1;
+}
+
+nav.light-mode {
+  background-color: rgb(249, 249, 249);
+}
+
+.project.light-mode {
+  border: 1px solid rgb(129, 129, 129);
+  background-color: rgb(249, 249, 249);
+  box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.2);
+  opacity: 1;
+}
+
+
+nav a.light-mode,
+.contacts.light-mode,
+.scroll-down-link.light-mode,
+#home p:nth-child(4).light-mode,
+#about.light-mode,
+#projects.light-mode
+{
+  color:black;
+  opacity: 1;
+}
 
 body {
   background-color: rgb(1, 5, 8);
@@ -45,13 +80,15 @@ body {
   height: 30px;
 }
 
+nav a {
+  color: white;
+  opacity: 0.6;
+}
 
 nav ul li a {
   text-shadow: none;
-  opacity: 0.6;
   transition: all 0.3s ease-in-out;
   text-decoration: none;
-  color: white;
 }
 
 
@@ -75,11 +112,9 @@ nav ul {
 nav {
   position: fixed;
   width: 20vw;
-  height: 80vh;
+  height: 100vh;
   border-right: 1px solid rgba(151, 151, 151, 0.6);
-  margin-top: 2%;
-  margin-bottom: 20%;
-  transition: all .2s ease-in;
+
 }
 
 .contacts {
@@ -338,6 +373,11 @@ main {
   justify-content: space-between;
   margin-top: 10%;
   flex-direction: column;
+  background-color: rgb(0, 0, 0, 0);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-inline: 10px;
+  border-radius: 20px;
 }
 
 

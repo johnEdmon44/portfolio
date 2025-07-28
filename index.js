@@ -3,71 +3,30 @@
 const moonIcon = document.querySelector("#moon-icon");
 const sunIcon = document.querySelector("#sun-icon");
 const body = document.body;
-const nav = document.querySelectorAll("#nav a");
-const contacts = document.querySelector(".contacts");
+const lightMode = document.querySelectorAll("#nav a, body, .contacts, .scroll-down-link, #home p:nth-child(4), #about, #projects, .project, nav");
 const scrollDownLink = document.querySelectorAll(".scroll-down-link");
-const homeP = document.querySelector("#home p:nth-child(4)");
-const about = document.querySelector("#about");
 const projects = document.querySelector("#projects");
 
 const menuBtn = document.querySelector("#menu");
 const slideMenu = document.querySelector('#nav');
 
 
-moonIcon.addEventListener("click", () => {
-  moonIcon.style.opacity = 1;
-  sunIcon.style.opacity = 0.2;
+sunIcon.addEventListener("click", () => {
+  moonIcon.classList.add("light-mode");
+  sunIcon.classList.add("light-mode");
 
-  body.style.backgroundColor = "rgb(1, 5, 8)";
-
-  nav.forEach(link => {
-    link.style.color = "white";
+  lightMode.forEach(n => {
+    n.classList.add("light-mode");
   });
-
-  moonIcon.style.color = "white";
-  sunIcon.style.color = "white";
-  contacts.style.color = "white";
-
-  scrollDownLink.forEach(scroll => {
-    scroll.style.color = "white"
-  });
-
-  homeP.style.color = "rgb(157, 157, 157)";
-  about.style.color = "rgb(157, 157, 157)";
-  projects.style.color = "rgb(157, 157, 157)";
 });
 
+moonIcon.addEventListener("click", () => {
+  moonIcon.classList.remove("light-mode");
+  sunIcon.classList.remove("light-mode");
 
-sunIcon.addEventListener("click", () => {
-  moonIcon.style.opacity = 0.2;
-  sunIcon.style.opacity = 1;
-
-  body.style.backgroundColor = "white";
-
-  nav.forEach(link => {
-    link.style.color = "black"
-  })
-
-  moonIcon.style.color = "black";
-  sunIcon.style.color = "black";
-  contacts.style.color = "black";
-
-  scrollDownLink.forEach(scroll => {
-    scroll.style.color = "black";
-    scroll.style.opacity = "0.7";
-
-    scroll.addEventListener("mouseover", () => {
-      scroll.style.opacity = "1"
-    });
-
-    scroll.addEventListener("mouseover", () => {
-      scroll.style.opacity = "0.7";
-    });
+  lightMode.forEach(n => {
+    n.classList.remove("light-mode");
   });
-
-  homeP.style.color = "black";
-  about.style.color = "black";
-  projects.style.color = "black";
 });
 
 
