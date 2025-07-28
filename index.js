@@ -3,8 +3,7 @@
 const moonIcon = document.querySelector("#moon-icon");
 const sunIcon = document.querySelector("#sun-icon");
 const body = document.body;
-const lightMode = document.querySelectorAll("#nav a, body, .contacts, .scroll-down-link, #home p:nth-child(4), #about, #projects, .project, nav");
-const scrollDownLink = document.querySelectorAll(".scroll-down-link");
+const lightMode = document.querySelectorAll("#nav a, body, .contacts, .scroll-down-link, #home p:nth-child(4), #about, #projects, .project, nav, .scroll-down-link");
 const projects = document.querySelector("#projects");
 
 const menuBtn = document.querySelector("#menu");

@@ -37,6 +37,7 @@ nav.light-mode {
 nav a.light-mode,
 .contacts.light-mode,
 .scroll-down-link.light-mode,
+.scroll-down-link:hover.light-mode,
 #home p:nth-child(4).light-mode,
 #about.light-mode,
 #projects.light-mode
