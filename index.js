@@ -12,7 +12,7 @@ function toggleLightMode() {
   sunIcon.classList.toggle("light-mode");
 
   lightModeElements.forEach(n => {
-    n.classList.add("light-mode");
+    n.classList.toggle("light-mode");
   });
 }
 
