@@ -2,29 +2,24 @@
 
 const moonIcon = document.querySelector("#moon-icon");
 const sunIcon = document.querySelector("#sun-icon");
-const lightMode = document.querySelectorAll("#nav a, body, .contacts, .scroll-down-link, #home p:nth-child(4), #about, #projects, .project, nav, .scroll-down-link");
+const lightModeElements = document.querySelectorAll("#nav a, body, .contacts, .scroll-down-link, #home p:nth-child(4), #about, #projects, .project, nav, .scroll-down-link");
 
 const menuBtn = document.querySelector("#menu");
 const slideMenu = document.querySelector('#nav');
 
+function toggleLightMode() {
+  moonIcon.classList.toggle("light-mode");
+  sunIcon.classList.toggle("light-mode");
 
-sunIcon.addEventListener("click", () => {
-  moonIcon.classList.add("light-mode");
-  sunIcon.classList.add("light-mode");
-
-  lightMode.forEach(n => {
+  lightModeElements.forEach(n => {
     n.classList.add("light-mode");
   });
-});
+}
 
-moonIcon.addEventListener("click", () => {
-  moonIcon.classList.remove("light-mode");
-  sunIcon.classList.remove("light-mode");
 
-  lightMode.forEach(n => {
-    n.classList.remove("light-mode");
-  });
-});
+sunIcon.addEventListener("click", toggleLightMode);
+
+moonIcon.addEventListener("click", toggleLightMode);
 
 
 menuBtn.addEventListener("click", () => {
