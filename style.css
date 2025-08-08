@@ -285,8 +285,6 @@ main {
   gap: 2rem;
   margin-top: 3%;
   max-width: 800px; 
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .skills div {
@@ -540,39 +538,6 @@ main {
 }
 
 
-
-@media (width: 2560px) {
-  main {
-    max-width: 90vw;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 0;
-    font-size: 1.5rem;
-  }
-
-  nav {
-    font-size: 1.5rem;
-  }
-
-  #home h1, #about h1 {
-    margin-top: 5%;
-  }
-
-  .img-container {
-    height: 23rem;
-    width: 60rem;
-    position: relative;
-  }
-}
-
-
-@media (width: 1440px) {
-  #about h1 {
-    margin-top: 5%;
-  }
-}
-
-
 @media (max-width: 1024px) {
   nav {
     position: absolute;
@@ -819,5 +784,231 @@ main {
   #more-projects h1 {
     font-size: 0.8rem;
     letter-spacing: 0.5rem;
+  }
+}
+
+
+@media (min-width: 3840px) {
+  body {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+  }
+
+  main{
+    width: 70vw;
+    border-right: 2px solid  rgba(129, 129, 129, 0.244);
+    border-left: 2px solid  rgba(129, 129, 129, 0.244);
+  }
+
+  #home p:first-child {
+  font-size: 5rem;
+}
+
+
+  #home p:nth-child(2) {
+    font-size: 6rem;
+  }
+
+
+  #home p:nth-child(3) {
+    font-size: 4.5rem;
+    letter-spacing: .5rem;
+  }
+
+  
+  .nav--page li:hover a {
+    font-size: 2rem;
+    letter-spacing: 2rem;
+  }
+
+  .contacts {
+    letter-spacing: 5px;
+  }
+
+  .project div:nth-child(2) > * {
+    margin-right: 1%;
+  }
+
+  .skills {
+    margin-right: 0;
+  }
+
+  .scroll-down-link {
+    font-size: 3rem;
+    letter-spacing: .5rem;
+  }
+
+  
+  .skills-logo {
+    height: 100px;
+    width: 100px;
+    object-fit: contain;
+  }
+
+  .skills {
+    gap: 7rem;
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    margin-top: 5%;
+    font-size: 2.5rem;
+  }
+
+
+  .project-container {
+    margin-right: 0%;
+  }
+
+  
+  .project-link {
+    padding: 3rem;
+    font-size: 2.5rem;
+    letter-spacing: 1rem;
+    border-radius: 10px;
+  }
+
+
+  .project-details > div:not(.links-container):nth-child(2) {
+    width: 100%;
+  }
+
+  .project-details p {
+    font-size: 2.5rem;
+  }
+
+  .img-container {
+    height: 40rem;
+    width: 85rem;
+  }
+
+  .section-container {
+    margin-left: 10vw;
+  }
+
+  
+  .tech-logo {
+    height: 90px;
+    width: 90px;
+  }
+
+  .project-img-demo {
+    padding: 3rem;
+    letter-spacing: 1.5rem;
+    border-radius: 10px;
+  }
+}
+
+
+@media (min-width: 2560px) and (max-width: 3840px) {
+  body {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+  }
+
+  main{
+    width: 80vw;
+    border-right: 2px solid  rgba(129, 129, 129, 0.244);
+    border-left: 2px solid  rgba(129, 129, 129, 0.244);
+  }
+
+  #home p:first-child {
+    font-size: 4rem;
+  }
+
+
+  #home p:nth-child(2) {
+    font-size: 5rem;
+  }
+
+
+  #home p:nth-child(3) {
+    font-size: 3.5rem;
+    letter-spacing: .5rem;
+  }
+
+  
+  .nav--page li:hover a {
+    font-size: 2rem;
+    letter-spacing: 2rem;
+  }
+
+  .contacts {
+    letter-spacing: 2px;
+  }
+
+  .project div:nth-child(2) > * {
+    margin-right: 1%;
+  }
+
+  .skills {
+    margin-right: 0;
+  }
+
+  .scroll-down-link {
+    font-size: 3rem;
+    letter-spacing: .5rem;
+  }
+
+  
+  .skills-logo {
+    height: 100px;
+    width: 100px;
+    object-fit: contain;
+  }
+
+  .skills {
+    gap: 7rem;
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    margin-top: 5%;
+    font-size: 2.5rem;
+  }
+
+
+  .project-container {
+    margin-right: 0%;
+  }
+
+  
+  .project-link {
+    padding: 2rem;
+    font-size: 2rem;
+    letter-spacing: 1rem;
+    border-radius: 10px;
+  }
+
+
+  .project-details > div:not(.links-container):nth-child(2) {
+    width: 100%;
+  }
+
+  .project-details p {
+    font-size: 1.8rem;
+  }
+
+  .img-container {
+    height: 30rem;
+    width: 80rem;
+  }
+
+  .section-container {
+    margin-left: 15vw;
+  }
+
+  
+  .tech-logo {
+    height: 70px;
+    width: 70px;
+  }
+
+  .project-img-demo {
+    padding: 1rem;
+    letter-spacing: 2px;
+    border-radius: 5px;
   }
 }
