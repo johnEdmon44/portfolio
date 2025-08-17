@@ -148,6 +148,14 @@ nav {
   position: relative;
 }
 
+.section-container h2{
+  color: white;
+  text-align: center;
+  letter-spacing: 1rem;
+  font-size: 2rem;
+  padding-top: 5%;
+  color:  rgb(157, 157, 157);
+}
 
 main {
   margin-top: 2%;
@@ -160,9 +168,11 @@ main {
 }
 
 
-#home p:nth-child(2) {
+#home h1 {
   font-size: 3.5rem;
   font-family: 'Montserrat', sans-serif;
+  color: rgb(102, 51, 153);
+  text-align: center;
 }
 
 
@@ -544,6 +554,15 @@ main {
     left: -250px;
   }
 
+  .skills {
+    max-width: 500px;
+  }
+
+  .section-container h2 {
+    font-size: 1.5rem;
+    padding-bottom: 10%;
+  }
+
   .project p {
     letter-spacing: 0.03rem;
   }
@@ -580,6 +599,19 @@ main {
 
 
 @media (max-width: 768px) {
+  #home {
+    margin-top: 10%;
+  }
+
+  .skills {
+    max-width: 500px;
+  }
+
+  .section-container h2 {
+    font-size: 1.5rem;
+    padding-bottom: 10%;
+  }
+
   .skills-logo {
     width: 45px;
     height: 45px;
@@ -741,7 +773,7 @@ main {
     font-size: 1rem;
   }
 
-  #home p:nth-child(2) {
+  #home h1 {
     font-size: 2rem;
   }
 
@@ -768,7 +800,7 @@ main {
     height: 35px;
   }
 
-  .section-container h1 {
+  .section-container h2 {
     font-size: 0.9rem;
     margin-bottom: 1rem;
   }
@@ -806,7 +838,7 @@ main {
 }
 
 
-  #home p:nth-child(2) {
+  #home h1 {
     font-size: 6rem;
   }
 
@@ -919,7 +951,7 @@ main {
   }
 
 
-  #home p:nth-child(2) {
+  #home h1 {
     font-size: 5rem;
   }
 
